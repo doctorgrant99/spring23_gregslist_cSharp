@@ -56,5 +56,6 @@ CREATE TABLE IF NOT EXISTS houses(
 ) default charset utf8mb4 COMMENT '';
 
 INSERT INTO houses(year, bathrooms, bedrooms, description, price)
-VALUES(1966, 4, 4, 'a haunted house', 60000)
+VALUES(1966, 4, 4, 'a haunted house', 60000);
 
+SELECT * FROM houses ORDER BY price DESC LIMIT 1;
