@@ -45,7 +45,7 @@ DELETE FROM cars WHERE id = 1 ;
 DROP TABLE cars;
 
 CREATE TABLE IF NOT EXISTS houses(
-  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'primary key'
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'primary key',
   year SMALLINT NOT NULL DEFAULT 1935,
   bathrooms SMALLINT NOT NULL DEFAULT 1,
   bedrooms SMALLINT NOT NULL DEFAULT 1,
@@ -56,4 +56,5 @@ CREATE TABLE IF NOT EXISTS houses(
 ) default charset utf8mb4 COMMENT '';
 
 INSERT INTO houses(year, bathrooms, bedrooms, description, price)
-VALUES
+VALUES(1966, 4, 4, 'a haunted house', 60000)
+
